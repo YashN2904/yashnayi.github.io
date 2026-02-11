@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yash Nayi | React Native Developer</title>
+<title>Brikka | Real Estate Mobile Application</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -23,7 +23,7 @@ body {
 }
 
 section {
-  padding: 90px 12%;
+  padding: 100px 12%;
 }
 
 h1, h2, h3 {
@@ -38,7 +38,7 @@ p {
 ul {
   margin-top: 15px;
   color: #475569;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
 .btn {
@@ -66,38 +66,24 @@ ul {
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: 56px;
 }
 
 .hero span {
   color: #2563eb;
 }
 
-/* CARD STYLE */
-.card {
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-  margin-bottom: 40px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* PROJECT */
+/* PROJECT SECTION */
 .project-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 70px;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .project-wrapper img {
-  width: 550px;
+  width: 600px;
   max-width: 100%;
   border-radius: 25px;
   box-shadow: 0 30px 60px rgba(0,0,0,0.15);
@@ -108,32 +94,32 @@ ul {
   transform: scale(1.05);
 }
 
-/* SKILLS */
-.skills-grid {
+/* TECH STACK */
+.tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
+  gap: 30px;
   margin-top: 40px;
 }
 
-/* CONTACT */
-.contact {
-  background: #1e293b;
-  color: white;
-  text-align: center;
-  border-radius: 20px;
+.tech-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: 0.3s;
 }
 
-.contact p {
-  color: #cbd5e1;
+.tech-card:hover {
+  transform: translateY(-5px);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 25px;
+  padding: 40px;
   background: #0f172a;
   color: #94a3b8;
-  margin-top: 40px;
 }
 
 @media(max-width: 768px){
@@ -157,78 +143,32 @@ footer {
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Hello, I'm <span>Yash Nayi</span></h1>
-  <h2>Senior React Native Mobile App Developer</h2>
+  <h1><span>Brikka</span></h1>
+  <h2>Real Estate Mobile Application</h2>
   <p>
-    3+ years of professional experience building scalable, high-performance mobile applications 
-    for iOS and Android. Specialized in Real Estate, Community Platforms, and AI-powered applications.
+    A modern real estate mobile experience built for seamless property discovery,
+    intelligent filtering, and direct agent interaction.
   </p>
-  <a href="#contact" class="btn">Hire Me</a>
 </section>
 
-<!-- ABOUT -->
+<!-- PROJECT SHOWCASE -->
 <section>
-  <div class="card">
-    <h2>Professional Summary</h2>
-    <p>
-      React Native Developer with strong experience in end-to-end mobile application development 
-      including architecture design, REST & GraphQL API integration, Firebase services, AWS cloud integration, 
-      CI/CD automation, and production deployment.
-    </p>
-    <p>
-      Passionate about performance optimization, clean code architecture, scalable backend connectivity, 
-      and delivering seamless user experiences that drive real business impact.
-    </p>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section>
-  <h2>Professional Experience</h2>
-
-  <div class="card">
-    <h3>Software Engineer – Creole Studios</h3>
-    <p><strong>May 2023 – Present</strong></p>
-    <ul>
-      <li>Developed cross-platform mobile applications using React Native for iOS & Android.</li>
-      <li>Integrated Firebase (Auth, Firestore, Analytics, Crashlytics, FCM).</li>
-      <li>Configured CI/CD pipelines using Jenkins & Fastlane.</li>
-      <li>Reduced load time by 30% through architecture improvements.</li>
-      <li>Integrated Stripe payments & real-time chat systems.</li>
-      <li>Managed Play Store & App Store production releases.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>React Native Developer – Internship</h3>
-    <p><strong>Jan 2023 – May 2023</strong></p>
-    <ul>
-      <li>Built production-level mobile features.</li>
-      <li>Integrated REST APIs and Firebase services.</li>
-      <li>Worked in Agile sprint-based development cycles.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- FEATURED PROJECT -->
-<section>
-  <h2>Featured Project</h2>
+  <h2>Project Overview</h2>
 
   <div class="project-wrapper">
     <img src="image2.png" alt="Brikka Real Estate App Screenshot">
 
     <div>
-      <h3>Brikka – Real Estate Mobile Application</h3>
-
-      <p><strong>Project Description:</strong></p>
+      <h3>Project Description</h3>
 
       <p>
-        Developed a modern real estate mobile application that allows users to explore, search, 
-        and view detailed property listings with location-based discovery and direct agent contact. 
-        The app provides a seamless browsing experience with secure authentication and intuitive UI.
+        Developed a modern real estate mobile application that allows users to explore,
+        search, and view detailed property listings with location-based discovery and
+        direct agent contact. The app provides a seamless browsing experience with secure
+        authentication and intuitive UI.
       </p>
 
-      <p><strong>Key Features:</strong></p>
+      <h3>Key Features</h3>
 
       <ul>
         <li>Email & Apple ID authentication</li>
@@ -242,76 +182,43 @@ footer {
       </ul>
 
       <p>
-        The application focuses on performance optimization, smooth navigation, 
-        and scalable backend integration to efficiently handle large property datasets.
+        The application is designed with a clean minimal interface,
+        optimized performance, and scalable backend integration to handle
+        large property datasets efficiently.
       </p>
     </div>
   </div>
 </section>
 
-
-<!-- OTHER PROJECTS -->
+<!-- TECH STACK -->
 <section>
-  <h2>Other Projects</h2>
+  <h2>Technology Stack</h2>
 
-  <div class="card">
-    <h3>ITA Connect</h3>
-    <p>
-      A mobile app for financial advisers providing access to marketing tools, company news, and 
-      downloadable resources. Integrated WordPress APIs, Firebase authentication, and automated CI/CD pipelines.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>BoomNation</h3>
-    <p>
-      Community-driven platform for skilled workers to connect and find job opportunities. 
-      Built with React Native, AWS, Apollo GraphQL, Stream Chat, and Stripe integration. 
-      Features include real-time chat, job listings, social feeds, and secure payments.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>WatcherAI</h3>
-    <p>
-      AI-powered chatbot application integrating OpenAI ChatGPT and DALL·E APIs. 
-      Includes speech-to-text and text-to-speech functionality for interactive AI conversations.
-    </p>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section>
-  <h2>Technical Skills</h2>
-
-  <div class="skills-grid">
-    <div class="card">
-      <h3>Mobile</h3>
-      <p>React Native, TypeScript, Redux, JavaScript</p>
+  <div class="tech-grid">
+    <div class="tech-card">
+      <h3>Mobile Development</h3>
+      <p>React Native, TypeScript, Redux</p>
     </div>
 
-    <div class="card">
-      <h3>Backend & Cloud</h3>
-      <p>Firebase, Supabase, AWS (Lambda, S3, EC2)</p>
+    <div class="tech-card">
+      <h3>Backend & Database</h3>
+      <p>Firebase Authentication, Firestore</p>
     </div>
 
-    <div class="card">
-      <h3>DevOps</h3>
-      <p>Jenkins, Fastlane, Docker, Git</p>
+    <div class="tech-card">
+      <h3>Integrations</h3>
+      <p>Google Maps API, Push Notifications</p>
+    </div>
+
+    <div class="tech-card">
+      <h3>Deployment</h3>
+      <p>CI/CD Automation, App Store & Play Store</p>
     </div>
   </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Let’s Build Something Great 🚀</h2>
-  <p>Email: yash29.parekh@gmail.com</p>
-  <p>Phone: +91-7600850550</p>
-  <p>LinkedIn: @yashnayi29</p>
 </section>
 
 <footer>
-  © 2026 Yash Nayi | React Native Developer
+  © 2026 Brikka – Real Estate Mobile Application Portfolio
 </footer>
 
 </body>
