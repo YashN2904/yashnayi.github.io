@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,6 @@ body {
   color: #1e293b;
 }
 
-/* ======= GLOBAL ======= */
 section {
   padding: 90px 12%;
 }
@@ -37,6 +35,12 @@ p {
   line-height: 1.8;
 }
 
+ul {
+  margin-top: 15px;
+  color: #475569;
+  line-height: 1.8;
+}
+
 .btn {
   display: inline-block;
   padding: 14px 28px;
@@ -46,7 +50,6 @@ p {
   border-radius: 8px;
   margin-top: 25px;
   transition: 0.3s ease;
-  font-weight: 500;
 }
 
 .btn:hover {
@@ -54,7 +57,7 @@ p {
   transform: translateY(-3px);
 }
 
-/* ======= HERO ======= */
+/* HERO */
 .hero {
   height: 100vh;
   display: flex;
@@ -64,61 +67,27 @@ p {
 
 .hero h1 {
   font-size: 52px;
-  font-weight: 700;
 }
 
 .hero span {
   color: #2563eb;
 }
 
-.hero h2 {
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-/* ======= ABOUT ======= */
-.about {
+/* CARD STYLE */
+.card {
   background: white;
+  padding: 40px;
   border-radius: 20px;
-  padding: 60px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-}
-
-/* ======= EXPERIENCE ======= */
-.experience-card {
-  background: white;
-  padding: 35px;
-  border-radius: 18px;
-  margin-bottom: 30px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
   transition: 0.3s;
 }
 
-.experience-card:hover {
+.card:hover {
   transform: translateY(-5px);
 }
 
-/* ======= SKILLS ======= */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
-}
-
-.skill-card {
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-  transition: 0.3s;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-}
-
-/* ======= PROJECT ======= */
+/* PROJECT */
 .project-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -139,7 +108,15 @@ p {
   transform: scale(1.05);
 }
 
-/* ======= CONTACT ======= */
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* CONTACT */
 .contact {
   background: #1e293b;
   color: white;
@@ -159,7 +136,6 @@ footer {
   margin-top: 40px;
 }
 
-/* ======= RESPONSIVE ======= */
 @media(max-width: 768px){
   section {
     padding: 60px 8%;
@@ -179,124 +155,153 @@ footer {
 
 <body>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
   <h1>Hello, I'm <span>Yash Nayi</span></h1>
   <h2>Senior React Native Mobile App Developer</h2>
   <p>
-    3–4 Years of experience building scalable, high-performance real estate and business mobile applications deployed on App Store & Play Store.
+    3+ years of professional experience building scalable, high-performance mobile applications 
+    for iOS and Android. Specialized in Real Estate, Community Platforms, and AI-powered applications.
   </p>
   <a href="#contact" class="btn">Hire Me</a>
 </section>
 
-<!-- ===== ABOUT ===== -->
+<!-- ABOUT -->
 <section>
-  <div class="about">
-    <h2>About Me</h2>
+  <div class="card">
+    <h2>Professional Summary</h2>
     <p>
-      I am a React Native Developer specializing in real estate and business applications. I build scalable, production-grade mobile apps with clean architecture and seamless user experience.
+      React Native Developer with strong experience in end-to-end mobile application development 
+      including architecture design, REST & GraphQL API integration, Firebase services, AWS cloud integration, 
+      CI/CD automation, and production deployment.
     </p>
     <p>
-      My expertise includes advanced property filtering, Google Maps integration, secure payment systems, push notifications, and real-time chat functionality.
-    </p>
-  </div>
-</section>
-
-<!-- ===== EXPERIENCE ===== -->
-<section>
-  <h2>Work Experience</h2>
-
-  <div class="experience-card">
-    <h3>Senior React Native Developer</h3>
-    <p><strong>2022 – Present</strong></p>
-    <p>
-      • Built real estate marketplace applications  
-      • Integrated Firebase Authentication & Firestore  
-      • Implemented Google Maps with property clustering  
-      • Integrated Stripe & Razorpay payment systems  
-      • Managed production releases on App Store & Play Store  
-      • Automated builds using CI/CD pipelines  
-    </p>
-  </div>
-
-  <div class="experience-card">
-    <h3>React Native Developer</h3>
-    <p><strong>2021 – 2022</strong></p>
-    <p>
-      • Developed reusable UI components  
-      • Integrated REST APIs  
-      • Implemented push notifications (FCM)  
-      • Optimized performance & reduced crash rates  
+      Passionate about performance optimization, clean code architecture, scalable backend connectivity, 
+      and delivering seamless user experiences that drive real business impact.
     </p>
   </div>
 </section>
 
-<!-- ===== SKILLS ===== -->
+<!-- EXPERIENCE -->
 <section>
-  <h2>Technical Skills</h2>
+  <h2>Professional Experience</h2>
 
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Mobile Development</h3>
-      <p>React Native, TypeScript, JavaScript</p>
-    </div>
+  <div class="card">
+    <h3>Software Engineer – Creole Studios</h3>
+    <p><strong>May 2023 – Present</strong></p>
+    <ul>
+      <li>Developed cross-platform mobile applications using React Native for iOS & Android.</li>
+      <li>Integrated Firebase (Auth, Firestore, Analytics, Crashlytics, FCM).</li>
+      <li>Configured CI/CD pipelines using Jenkins & Fastlane.</li>
+      <li>Reduced load time by 30% through architecture improvements.</li>
+      <li>Integrated Stripe payments & real-time chat systems.</li>
+      <li>Managed Play Store & App Store production releases.</li>
+    </ul>
+  </div>
 
-    <div class="skill-card">
-      <h3>Backend & Database</h3>
-      <p>Firebase, Node.js, REST APIs</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>Integrations</h3>
-      <p>Google Maps API, Stripe, Razorpay, FCM</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>DevOps</h3>
-      <p>Fastlane, CI/CD, Play Store & App Store Deployment</p>
-    </div>
+  <div class="card">
+    <h3>React Native Developer – Internship</h3>
+    <p><strong>Jan 2023 – May 2023</strong></p>
+    <ul>
+      <li>Built production-level mobile features.</li>
+      <li>Integrated REST APIs and Firebase services.</li>
+      <li>Worked in Agile sprint-based development cycles.</li>
+    </ul>
   </div>
 </section>
 
-<!-- ===== PROJECT ===== -->
+<!-- FEATURED PROJECT -->
 <section>
-  <h2>Featured Project – Real Estate Marketplace App</h2>
+  <h2>Featured Project – Real Estate Marketplace Application</h2>
 
   <div class="project-wrapper">
-    <!-- Your Screenshot -->
     <img src="image2.png" alt="Real Estate App Screenshot">
 
     <div>
       <p>
-        A premium real estate mobile application designed for buyers and agents. 
-        The app features a modern onboarding experience, categorized property listings, 
-        advanced search filters, and a clean dashboard UI.
+        A premium real estate mobile application enabling users to discover, explore, and connect with property listings.
+        Designed with modern UI principles focusing on minimal aesthetics and seamless navigation.
       </p>
 
       <p>
-        Users can explore properties via map-based discovery, view detailed property pages 
-        including price, ratings, amenities, and directly contact listing agents.
+        Key Features:
       </p>
 
-      <p>
-        The property detail screen includes image galleries, property specifications, 
-        agent profile section, and embedded location maps for better user engagement.
-      </p>
+      <ul>
+        <li>Advanced property search & filtering (Rent, Buy, House, Apartment)</li>
+        <li>Map-based property discovery with location markers</li>
+        <li>Detailed property pages with pricing, reviews & amenities</li>
+        <li>Agent contact & lead management system</li>
+        <li>Secure booking & payment integration</li>
+        <li>Push notifications & real-time updates</li>
+      </ul>
 
       <p>
-        The overall UI is designed with minimal aesthetics, intuitive navigation, 
-        and smooth performance for seamless real estate discovery.
+        The application focuses on performance, intuitive UX, and scalable backend integration 
+        to support large property datasets efficiently.
       </p>
     </div>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
+<!-- OTHER PROJECTS -->
+<section>
+  <h2>Other Projects</h2>
+
+  <div class="card">
+    <h3>ITA Connect</h3>
+    <p>
+      A mobile app for financial advisers providing access to marketing tools, company news, and 
+      downloadable resources. Integrated WordPress APIs, Firebase authentication, and automated CI/CD pipelines.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>BoomNation</h3>
+    <p>
+      Community-driven platform for skilled workers to connect and find job opportunities. 
+      Built with React Native, AWS, Apollo GraphQL, Stream Chat, and Stripe integration. 
+      Features include real-time chat, job listings, social feeds, and secure payments.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>WatcherAI</h3>
+    <p>
+      AI-powered chatbot application integrating OpenAI ChatGPT and DALL·E APIs. 
+      Includes speech-to-text and text-to-speech functionality for interactive AI conversations.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Technical Skills</h2>
+
+  <div class="skills-grid">
+    <div class="card">
+      <h3>Mobile</h3>
+      <p>React Native, TypeScript, Redux, JavaScript</p>
+    </div>
+
+    <div class="card">
+      <h3>Backend & Cloud</h3>
+      <p>Firebase, Supabase, AWS (Lambda, S3, EC2)</p>
+    </div>
+
+    <div class="card">
+      <h3>DevOps</h3>
+      <p>Jenkins, Fastlane, Docker, Git</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="contact">
   <h2>Let’s Build Something Great 🚀</h2>
-  <p>Email: yas29.parekh@email.com</p>
+  <p>Email: yash29.parekh@gmail.com</p>
   <p>Phone: +91-7600850550</p>
-  <p>LinkedIn: https://www.linkedin.com/in/yashnayi29/</p>
+  <p>LinkedIn: @yashnayi29</p>
 </section>
 
 <footer>
