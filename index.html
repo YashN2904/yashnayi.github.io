@@ -1,10 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Yash Nayi | React Native Developer</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 * {
@@ -12,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,35 +23,38 @@ body {
   color: #1e293b;
 }
 
+/* ======= GLOBAL ======= */
 section {
-  padding: 80px 10%;
+  padding: 90px 12%;
 }
 
-h1, h2 {
+h1, h2, h3 {
   margin-bottom: 20px;
 }
 
 p {
   color: #475569;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 28px;
   background: #2563eb;
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  margin-top: 20px;
+  margin-top: 25px;
   transition: 0.3s ease;
+  font-weight: 500;
 }
 
 .btn:hover {
   background: #1d4ed8;
+  transform: translateY(-3px);
 }
 
-/* HERO */
+/* ======= HERO ======= */
 .hero {
   height: 100vh;
   display: flex;
@@ -56,7 +63,7 @@ p {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 700;
 }
 
@@ -64,95 +71,80 @@ p {
   color: #2563eb;
 }
 
-/* SKILLS */
+.hero h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* ======= ABOUT ======= */
+.about {
+  background: white;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* ======= EXPERIENCE ======= */
+.experience-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ======= SKILLS ======= */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 25px;
   margin-top: 40px;
 }
 
 .skill-card {
   background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-/* PROJECT */
-.project {
-  background: #ffffff;
+  padding: 30px;
   border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+  transition: 0.3s;
 }
 
-/* APP MOCKUPS */
-.mockups {
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ======= PROJECT ======= */
+.project-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 60px;
+  align-items: center;
   margin-top: 40px;
-  justify-content: center;
 }
 
-.phone {
-  width: 240px;
-  height: 480px;
-  background: #111827;
-  border-radius: 30px;
-  padding: 15px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  position: relative;
+.project-wrapper img {
+  width: 550px;
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+  transition: 0.4s;
 }
 
-.screen {
-  background: #f1f5f9;
-  height: 100%;
-  border-radius: 20px;
-  padding: 15px;
+.project-wrapper img:hover {
+  transform: scale(1.05);
 }
 
-.screen-header {
-  height: 20px;
-  background: #2563eb;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-.card {
-  height: 50px;
-  background: white;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-}
-
-.map-box {
-  height: 150px;
-  background: linear-gradient(135deg,#93c5fd,#3b82f6);
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.chat-bubble {
-  height: 35px;
-  width: 70%;
-  background: #e2e8f0;
-  border-radius: 20px;
-  margin-bottom: 10px;
-}
-
-.chat-bubble.right {
-  background: #2563eb;
-  margin-left: auto;
-}
-
-/* CONTACT */
+/* ======= CONTACT ======= */
 .contact {
-  text-align: center;
   background: #1e293b;
   color: white;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .contact p {
@@ -161,53 +153,104 @@ p {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   background: #0f172a;
   color: #94a3b8;
+  margin-top: 40px;
 }
 
+/* ======= RESPONSIVE ======= */
 @media(max-width: 768px){
+  section {
+    padding: 60px 8%;
+  }
+
   .hero h1 {
-    font-size: 34px;
+    font-size: 36px;
+  }
+
+  .project-wrapper {
+    flex-direction: column;
   }
 }
 
 </style>
 </head>
+
 <body>
 
-<!-- HERO -->
+<!-- ===== HERO ===== -->
 <section class="hero">
   <h1>Hello, I'm <span>Yash Nayi</span></h1>
   <h2>Senior React Native Mobile App Developer</h2>
-  <p>Building scalable real estate and business mobile applications with clean architecture and production-grade performance.</p>
+  <p>
+    3–4 Years of experience building scalable, high-performance real estate and business mobile applications deployed on App Store & Play Store.
+  </p>
   <a href="#contact" class="btn">Hire Me</a>
 </section>
 
-<!-- ABOUT -->
+<!-- ===== ABOUT ===== -->
 <section>
-  <h2>About Me</h2>
-  <p>
-    I am a React Native Developer with 3–4 years of experience building high-performance mobile applications deployed on App Store and Play Store. I specialize in real estate marketplace apps including property listings, map search, booking systems, payments, and real-time chat functionality.
-  </p>
+  <div class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a React Native Developer specializing in real estate and business applications. I build scalable, production-grade mobile apps with clean architecture and seamless user experience.
+    </p>
+    <p>
+      My expertise includes advanced property filtering, Google Maps integration, secure payment systems, push notifications, and real-time chat functionality.
+    </p>
+  </div>
 </section>
 
-<!-- SKILLS -->
+<!-- ===== EXPERIENCE ===== -->
+<section>
+  <h2>Work Experience</h2>
+
+  <div class="experience-card">
+    <h3>Senior React Native Developer</h3>
+    <p><strong>2022 – Present</strong></p>
+    <p>
+      • Built real estate marketplace applications  
+      • Integrated Firebase Authentication & Firestore  
+      • Implemented Google Maps with property clustering  
+      • Integrated Stripe & Razorpay payment systems  
+      • Managed production releases on App Store & Play Store  
+      • Automated builds using CI/CD pipelines  
+    </p>
+  </div>
+
+  <div class="experience-card">
+    <h3>React Native Developer</h3>
+    <p><strong>2021 – 2022</strong></p>
+    <p>
+      • Developed reusable UI components  
+      • Integrated REST APIs  
+      • Implemented push notifications (FCM)  
+      • Optimized performance & reduced crash rates  
+    </p>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
 <section>
   <h2>Technical Skills</h2>
+
   <div class="skills-grid">
     <div class="skill-card">
-      <h3>Mobile</h3>
+      <h3>Mobile Development</h3>
       <p>React Native, TypeScript, JavaScript</p>
     </div>
+
     <div class="skill-card">
-      <h3>Backend</h3>
+      <h3>Backend & Database</h3>
       <p>Firebase, Node.js, REST APIs</p>
     </div>
+
     <div class="skill-card">
       <h3>Integrations</h3>
-      <p>Google Maps, Stripe, Razorpay, FCM</p>
+      <p>Google Maps API, Stripe, Razorpay, FCM</p>
     </div>
+
     <div class="skill-card">
       <h3>DevOps</h3>
       <p>Fastlane, CI/CD, Play Store & App Store Deployment</p>
@@ -215,68 +258,45 @@ footer {
   </div>
 </section>
 
-<!-- PROJECT -->
+<!-- ===== PROJECT ===== -->
 <section>
   <h2>Featured Project – Real Estate Marketplace App</h2>
-  <div class="project">
-    <p>
-      A full-featured real estate application that allows users to browse properties, filter by budget and location, explore map-based listings, chat with agents, and securely book properties.
-    </p>
-  </div>
 
-  <div class="mockups">
+  <div class="project-wrapper">
+    <!-- Your Screenshot -->
+    <img src="image2.png" alt="Real Estate App Screenshot">
 
-    <!-- Property Listing -->
-    <div class="phone">
-      <div class="screen">
-        <div class="screen-header"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
+    <div>
+      <p>
+        A premium real estate mobile application designed for buyers and agents. 
+        The app features a modern onboarding experience, categorized property listings, 
+        advanced search filters, and a clean dashboard UI.
+      </p>
+
+      <p>
+        Users can explore properties via map-based discovery, view detailed property pages 
+        including price, ratings, amenities, and directly contact listing agents.
+      </p>
+
+      <p>
+        The property detail screen includes image galleries, property specifications, 
+        agent profile section, and embedded location maps for better user engagement.
+      </p>
+
+      <p>
+        The overall UI is designed with minimal aesthetics, intuitive navigation, 
+        and smooth performance for seamless real estate discovery.
+      </p>
     </div>
-
-    <!-- Map Screen -->
-    <div class="phone">
-      <div class="screen">
-        <div class="screen-header"></div>
-        <div class="map-box"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-    </div>
-
-    <!-- Property Detail -->
-    <div class="phone">
-      <div class="screen">
-        <div class="screen-header"></div>
-        <div class="card" style="height:120px;"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-    </div>
-
-    <!-- Chat Screen -->
-    <div class="phone">
-      <div class="screen">
-        <div class="screen-header"></div>
-        <div class="chat-bubble"></div>
-        <div class="chat-bubble right"></div>
-        <div class="chat-bubble"></div>
-        <div class="chat-bubble right"></div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ===== CONTACT ===== -->
 <section id="contact" class="contact">
-  <h2>Let’s Build Something Great</h2>
-  <p>Email: yash@email.com</p>
-  <p>Phone: +91-XXXXXXXXXX</p>
-  <p>LinkedIn: linkedin.com/in/yash</p>
+  <h2>Let’s Build Something Great 🚀</h2>
+  <p>Email: yas29.parekh@email.com</p>
+  <p>Phone: +91-7600850550</p>
+  <p>LinkedIn: https://www.linkedin.com/in/yashnayi29/</p>
 </section>
 
 <footer>
